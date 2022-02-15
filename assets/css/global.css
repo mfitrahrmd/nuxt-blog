@@ -1,0 +1,31 @@
+h1 {
+  @apply text-2xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+.title {
+  @apply text-base font-bold;
+}
+.display-1 {
+  @apply text-[3rem];
+}
+.display-2 {
+  @apply text-[3.75rem];
+}
+.display-3 {
+  @apply text-[4.5rem];
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
