@@ -27,11 +27,35 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
+      blue: colors.blue,
       emerald: colors.emerald,
+      indigo: colors.indigo,
       teal: colors.teal,
       cyan: colors.cyan,
       sky: colors.sky,
       rose: colors.rose,
+      pink: colors.pink,
+    },
+    extend: {
+      aspectRatio: {
+        "1/1": "1 / 1",
+        "4/3": "4 / 3",
+        "16/9": "16 / 9",
+      },
+      spacing: {
+        header: "58px",
+        "header-2": "132px",
+      },
+      width: {
+        "site-width": "1280px",
+      },
+      maxWidth: {
+        "site-width": "1280px",
+      },
+      minHeight: {
+        "body-height": "calc(100vh - 58px)",
+      },
     },
   },
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
