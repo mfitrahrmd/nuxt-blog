@@ -1,11 +1,9 @@
 <template>
-  <div
-    class="rounded-full overflow-hidden"
-    :class="[`w-${size} h-${size}`]"
-  >
+  <div :class="`rounded-full overflow-hidden w-12 h-12`">
     <img
       v-bind="$attrs"
       class="object-cover"
+      alt="avatar"
     >
   </div>
 </template>
@@ -15,8 +13,7 @@ export default {
   inheritAttrs: false,
   props: {
     size: {
-      type: [Number, String],
-      default: "8",
+      type: String,
     },
   },
 };

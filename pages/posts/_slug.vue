@@ -54,10 +54,7 @@
             <BaseCardContent class="py-0">
               <div class="relative -top-4 space-y-3">
                 <div class="flex items-end space-x-1">
-                  <Avatar
-                    :src="post.data.author.profile_image"
-                    size="12"
-                  />
+                  <Avatar :src="post.data.author.profile_image" />
                   <h2 class="font-medium">{{ post.data.author.first_name}} {{ post.data.author.last_name }}</h2>
                 </div>
                 <div class="flex justify-around">
