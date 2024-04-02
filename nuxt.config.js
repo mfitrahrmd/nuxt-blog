@@ -43,4 +43,8 @@ export default {
   env: {
     "buttercms-token": "3495bf047e0c94a76289d901a6de874a51c4deb3",
   },
+  target: "static",
+  router: {
+    base: "/nuxt-blog/",
+  },
 };
